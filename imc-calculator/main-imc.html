@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora MMC</title>
     <link rel="stylesheet" href="style/main-imc.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
 </head>
 <body>
     <main class="main-container">
         <section class="image-container">
-            <img src="assets/undraw_personal-trainer_bqkg.svg" alt="imagem de pessoas malhando na academia">
+            <img src="assets/gym-trainer.svg" alt="imagem de pessoas malhando na academia">
         </section>
         <section>
             <div class="calculator-container">
                 <h1>Calculadora - IMC</h1>
-                <p>Peso em kg</p>
-                <input type="number" autofocus>
-                <p>Peso em kg</p>
-                <input type="number">
+                <hr>
+                <div class="input-box">
+                    <label for="weight">Peso em kg</label> 
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" autofocus>
+                        <span>Kg</span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="height">Altura em metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="height">
+                        <span>cm</span>
+                    </div>
+                </div>
                 <button>Calcular</button>
             </div>
         </section>
