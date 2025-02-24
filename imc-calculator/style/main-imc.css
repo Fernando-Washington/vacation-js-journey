@@ -33,7 +33,7 @@ section {
 }
 
 .image-container > img {
-    width: 480px;
+    width: 70%;
 }
 
 .calculator-container {
@@ -71,7 +71,7 @@ section {
     margin-bottom: 0.5rem;
 
     /* <label> is display: inline. If you add display: inline-block to .brtop it will respect the margin. -- stack overflow */
-    
+
 }
 
 .input-field {
@@ -116,4 +116,22 @@ section {
 
 .calculator-container > button:active {
     filter: brightness(0.6);
+}
+
+@media screen and (max-width: 1140px) {
+    .image-container > img {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .image-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .calculator-container {
+        width: 90%;
+    }
 }
