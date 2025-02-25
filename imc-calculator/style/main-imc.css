@@ -189,4 +189,7 @@ section {
     .calculator-container {
         width: 90%;
     }
+    .result-container {
+        width: 90%;
+    }
 }
