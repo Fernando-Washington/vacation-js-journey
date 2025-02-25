@@ -129,7 +129,7 @@ section {
     min-height: 50px;
     height: auto;
     background-color: #232323;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     /* transition: 0.3s ease-in-out; */
 }
 
@@ -172,6 +172,7 @@ section {
 .more-info > span a:hover {
     color: var(--primary-color);
 }
+
 @media screen and (max-width: 1140px) {
     .image-container > img {
         width: 380px;

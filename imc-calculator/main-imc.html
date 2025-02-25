@@ -20,7 +20,7 @@
                     <label for="weight">Peso em kg</label> 
                     <div class="input-field">
                         <i class="fa-solid fa-weight-hanging"></i>
-                        <input type="number" id="weight" autofocus>
+                        <input type="number" id="weight" autofocus autocomplete="off">
                         <span>Kg</span>
                     </div>
                 </div>
@@ -28,13 +28,13 @@
                     <label for="height">Altura em metros</label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-                        <input type="number" id="height">
+                        <input type="number" id="height" autocomplete="off">
                         <span>cm</span>
                     </div>
                 </div>
-                <button>Calcular</button>
+                <button onclick="enebleResult()">Calcular</button>
             </div>
-            <div class="result-container">
+            <div class="result-container" id="result">
                 <!--quando o usuario clicar no button display block-->
                 <hr>
                 <div class="result-box">
@@ -57,6 +57,6 @@
             </div>
         </section>
     </main>
-    <script></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
