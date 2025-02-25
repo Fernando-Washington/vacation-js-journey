@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #F6F6F6;
+    --background-color: #232323;
+}
+
+body {
+    background-color: var(--background-color);  
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/orange-trump/assets/oval-office.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 80%;
+}
+
+.project-container > h1 {
+    font-size: 2rem;
+    font-weight: 400;  
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    padding: 10rem;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+    background-image: url('/orange-trump/assets/orange-trump.webp');
+    background-size: cover;
+    background-position: center;
+    transition: 0.1s ease-in-out;
+    border: transparent;
+    cursor: pointer;
+}
+
+.image-container:active {
+    padding: 12rem;
+}
+
+.text-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.text-container > p, span {
+    font-size: 1.5rem;
+}
