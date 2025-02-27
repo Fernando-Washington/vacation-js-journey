@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style/currency.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="currency-container">
+                <h1>Currency Converter</h1>
+                <div class="currency-box">
+                    <div class="option-box">
+                        <label for="optionFrom">From:</label>
+                        <select id="optionFrom">
+                            <option value="usd">USD</option>
+                            <option value="brl">BRL</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </div>
+                    
+                    <i onclick="alerta()" class="fa-solid fa-arrows-rotate"></i>
+        
+                    <div class="option-box option-2">
+                        <label for="optionTo">to:</label>
+                        <select id="optionTo">
+                            <option value="usd">USD</option>
+                            <option value="brl">BRL</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="amount-container">
+                    <label for="amount">Amount:</label>
+                    <input type="number" required autofocus>
+                </div>
+
+                <button>Convert</button>
+                
+            </div>
+        </section>
+    </main>
+    <script>
+        function alerta(){
+            alert('funfou')
+        }
+    </script>
+</body>
+</html>
