@@ -5,7 +5,7 @@
 }
 
 :root {
-    --font-light: #F6F6F6;
+    --font-light: #B4B4B4;
     --font-dark: #000000;
     --bg-light: #F3F4F6;
     --bg-dark: #1E1E1E;
@@ -21,54 +21,21 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: blue;
     width: 100%;
     height: 100vh;
 }
 
 .currency-container {
-    padding: 1rem;
-    border-radius: 4px;
     background-color: red;
-}
-
-.currency-container > h1 {
-    margin-bottom: 2rem;
-}
-
-.currency-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-}
-
-.currency-box > i {
-    margin-top: 0.8rem;
-}
-
-.option-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.option-2 {
-    margin-bottom: 2rem;
-}
-
-.option-box > label{
-    font-size: 0.875rem;
-}
-
-.option-box > select{
-    width: 168px;
-    height: 37px;
+    padding: 1rem;
+    min-width: 30%;
+    min-height: 20%;
+    width: auto;
+    height: auto;
     border-radius: 8px;
-    padding: 8px;
 }
 
-.amount-container {
-    display: flex;
-    flex-direction: column;
+.currency-container > h1{
+    margin-bottom: 1rem;
 }
-
-
