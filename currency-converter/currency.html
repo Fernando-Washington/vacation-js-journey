@@ -21,7 +21,7 @@
                             <option value="eur">EUR</option>
                         </select>
                     
-                    <i onclick="toggleSelect()" class="fa-solid fa-arrows-rotate"></i>
+                        <i onclick="toggleSelect()" class="fa-solid fa-right-left"></i>
         
                         <label for="optionTo">to:</label>
                         <select id="optionTo">
@@ -29,12 +29,16 @@
                             <option value="brl">BRL</option>
                             <option value="eur">EUR</option>
                         </select>
-
+                    </div>
                 </div>
 
                 <div class="amount-container">
                     <label for="amount">Amount:</label>
                     <input type="number" required autofocus>
+                </div>
+                <div class="result-container">
+                    <label for="result"></label>
+                    <span id="result"></span>
                 </div>
 
                 <button>Convert</button>
