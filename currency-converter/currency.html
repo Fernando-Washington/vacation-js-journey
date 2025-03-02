@@ -14,33 +14,33 @@
                 <h1>Currency Converter</h1>
                 <div class="currency-box">
                     <div class="option-box">
-                        <label for="optionFrom">From:</label>
-                        <select id="optionFrom">
-                            <option value="usd">USD</option>
-                            <option value="brl">BRL</option>
-                            <option value="eur">EUR</option>
-                        </select>
-                    
+                        <div class="option-1">
+                            <label class="spacing-label" for="optionFrom">From:</label>
+                            <select id="optionFrom">
+                                <option value="usd">USD</option>
+                                <option value="brl">BRL</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </div>
                         <i onclick="toggleSelect()" class="fa-solid fa-right-left"></i>
-        
-                        <label for="optionTo">to:</label>
-                        <select id="optionTo">
-                            <option value="usd">USD</option>
-                            <option value="brl">BRL</option>
-                            <option value="eur">EUR</option>
-                        </select>
+                        <div class="option-2">
+                            <label class="spacing-label" for="optionTo">to:</label>
+                            <select id="optionTo">
+                                <option value="usd">USD</option>
+                                <option value="brl">BRL</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-
                 <div class="amount-container">
-                    <label for="amount">Amount:</label>
+                    <label class="spacing-label" for="amount">Amount:</label>
                     <input type="number" required autofocus>
                 </div>
                 <div class="result-container">
-                    <label for="result"></label>
-                    <span id="result"></span>
+                    <label for="result">Test:</label>
+                    <span id="result">Test</span>
                 </div>
-
                 <button>Convert</button>
             </div>
         </section>    
