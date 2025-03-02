@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +8,115 @@
 
 :root {
     --font-light: #B4B4B4;
-    --font-dark: #000000;
+    --font-dark: #374151;
     --bg-light: #F3F4F6;
+    --bg-secondary-light: #FFFFFF;
     --bg-dark: #1E1E1E;
+    --secundary-color-light: #4F46E5;
+    --secundary-color-dark: #659CA3;
 }
 
 body {
     background-color: var(--bg-light);
     color: var(--font-dark);
     font-size: 1rem;
+    font-family: "Inter", serif;
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
     width: 100%;
     height: 100vh;
 }
 
 .currency-container {
-    background-color: red;
-    padding: 1rem;
     min-width: 30%;
-    min-height: 20%;
     width: auto;
+    min-height: 20%;
     height: auto;
+    padding: 1rem;
     border-radius: 8px;
+    background-color: var(--bg-secondary-light);
+    box-shadow: 6px 6px ;
 }
 
 .currency-container > h1{
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.option-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
     margin-bottom: 1rem;
+}
+
+.option-box > div > select {
+    width: 168px;
+    height: 38px;
+    padding: 0 8px;
+    font-size: 1rem;
+    background-color: #E5E7EB;
+    border: 2px solid #D1D5DB;
+    border-radius: 8px;
+}
+
+.option-box > i {
+    padding: 0.6rem;
+    position: relative;
+    top: 0.8rem;
+    border-radius: 100%;
+    background-color: #E5E7EB;
+}
+
+.option-1, .option-2, .amount-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacing-label {
+    margin-bottom: 8px;
+}
+
+.amount-container > input {
+    width: 100%;
+    min-height: 42px;
+    padding: 8px;
+    border: 2px solid #D1D5DB;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.currency-container > button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--secundary-color-light);
+    color: #FFFFFF;
+    border: transparent;
+    cursor: pointer;
+    margin-left: 80%;
+    transition: 0.1s ease-in-out;
+}
+
+.currency-container > button:active {
+    filter: brightness(0.6);
+}
+
+.result-container {
+    display: none; /*to change to flex*/
+    flex-direction: column;
+}
+
+.result-container > label {
+    margin-bottom: 0.5rem;
+}
+
+.result-container > span {
+    color: var(--secundary-color-light);
+    font-size: 2rem;
 }
