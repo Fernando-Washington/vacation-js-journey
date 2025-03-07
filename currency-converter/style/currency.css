@@ -20,6 +20,7 @@ body {
     font-size: 1rem;
     font-family: "Inter", serif;
     transition: 0.3s ease-in-out;
+    overflow-y: hidden;
 }
 
 header > nav {
@@ -151,4 +152,25 @@ section {
 .result-container > span {
     color: var(--secundary-color);
     font-size: 2rem;
+}
+
+@media screen and (max-width: 565px) {
+    .option-box {
+        gap: 1rem;
+    }
+    .currency-container > button {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .option-box {
+        flex-direction: column;
+    }
+    .option-box > div > select {
+        width: 300px;
+    }
+    .currency-container > button {
+        width: 100%;
+    }
 }
