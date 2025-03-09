@@ -8,11 +8,11 @@ function moreClick() {
   audio.play();
 
   if (counter >= 11 && counter < 20) {
-    image.style.backgroundImage = "url(/orange-trump/assets/mexican-trump.jpg)";
+    image.style.backgroundImage = "url(/assets/mexican-trump.jpg)";
     audio.src = "audio/mexican-dance.mp3";
     audio.play();
   } else if (counter >= 21) {
-    image.style.backgroundImage = "url(/orange-trump/assets/trump-sun.jpg)";
+    image.style.backgroundImage = "url(/assets/trump-sun.jpg)";
     audio.src = "audio/you-are-my-sunshine.mp3";
     audio.play();
   }
