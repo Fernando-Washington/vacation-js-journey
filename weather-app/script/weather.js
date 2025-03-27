@@ -5,9 +5,9 @@
 const apiKey = '------variavel-de-ambiente-------'
 const input = document.getElementById('input-local')
 
-const temp_result = document.getElementById('temp_result')
-const humidity_result = document.getElementById('humidity_result')
-const wind_result = document.getElementById('wind_result')
+const temp_result = document.getElementById('temp-result')
+const humidity_result = document.getElementById('humidity-result')
+const wind_result = document.getElementById('wind-result')
 
 let temp
 let humidity
@@ -26,7 +26,7 @@ const getData = async (city) => {
       humidity = data.main.humidity
       wind = data.wind.speed
 
-      temp_result.innerHTML = temp;
+      temp_result.innerHTML = `${Math.round(temp)}°C`;
       humidity_result.innerHTML = `${humidity}%`
       wind_result.innerHTML = `${wind}km/h`
     } else {
