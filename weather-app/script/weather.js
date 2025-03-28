@@ -27,8 +27,8 @@ const getData = async (city) => {
       wind = data.wind.speed
 
       temp_result.innerHTML = `${Math.round(temp)}°C`;
-      humidity_result.innerHTML = `${humidity}%`
-      wind_result.innerHTML = `${wind}km/h`
+      humidity_result.innerHTML = `${Math.round(humidity)}%`
+      wind_result.innerHTML = `${Math.round(wind)} km/h`
     } else {
       alert('Cidade não encontrada')
     }
