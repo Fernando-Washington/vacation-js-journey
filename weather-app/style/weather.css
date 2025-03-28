@@ -70,7 +70,7 @@ section {
     align-items: center;
 }
 
-.humidy-box {
+.humidity-box {
     display: flex;
     gap: 1rem;
 }
